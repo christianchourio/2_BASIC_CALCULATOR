@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <input class="inputCal" id="inputCal" type="text" id="result" disabled>
+
+        <table cellspacing="0">
+            <tr>
+                <td><input type="button" title="group1" class="btnCal" value="C" onclick="clearScreen()"></td>
+                <td><input type="button" title="group1" class="btnCal" value="%" onclick="showNumber('%')"></td>
+                <td><input type="button" title="group1" class="btnCal" value="/" onclick="showNumber('/')"></td>
+                <td><input type="button" title="group1" class="btnCal" value="<-" onclick="deleteLastNumber()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" title="group2" class="btnCal" value="7" onclick="showNumber(7)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="8" onclick="showNumber(8)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="9" onclick="showNumber(9)"></td>
+                <td><input type="button" title="group3" class="btnCal" value="x" onclick="showNumber('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" title="group2" class="btnCal" value="4" onclick="showNumber(4)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="5" onclick="showNumber(5)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="6" onclick="showNumber(6)"></td>
+                <td><input type="button" title="group3" class="btnCal" value="-" onclick="showNumber('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" title="group2" class="btnCal" value="1" onclick="showNumber(1)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="2" onclick="showNumber(2)"></td>
+                <td><input type="button" title="group2" class="btnCal" value="3" onclick="showNumber(3)"></td>
+                <td><input type="button" title="group3" class="btnCal" value="+" onclick="showNumber('+')"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="group4"><input type="button" title="group3" class="btnCal" value="0" onclick="showNumber(0)"></td>
+                <td><input type="button" title="group3" class="btnCal" value="." onclick="showNumber('.')"></td>
+                <td><input type="button" title="group5" class="btnCal" value="=" onclick="equal()"></td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
